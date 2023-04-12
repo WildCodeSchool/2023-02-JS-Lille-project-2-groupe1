@@ -17,6 +17,12 @@
   },
   "plugins": ["react", "import"],
   "rules": {
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ],
     "no-console": "off",
     "no-restricted-syntax": [
       "error",
