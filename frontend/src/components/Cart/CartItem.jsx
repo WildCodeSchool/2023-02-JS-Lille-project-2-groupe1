@@ -5,7 +5,7 @@ function CartItem() {
     <SCartItem>
       <div>
         {/* Image */}
-        <img src="https://placekitten.com/100/100" />
+        <img src="https://placekitten.com/100/100" alt="cart" />
 
         {/* Titre */}
         <p>Petit chat mignon</p>
