@@ -1,3 +1,3 @@
 import styled from "styled-components";
 
-export default styled.body``;
+export default styled.div``;

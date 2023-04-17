@@ -1,10 +1,10 @@
 import SFooter from "./FooterStyle";
-import Footerimg from "../../assets/Footerimg.svg";
+import footerImg from "../../assets/Footerimg.svg";
 
 export default function Footer() {
   return (
     <SFooter>
-      <img src={Footerimg} alt="" />
+      <img src={footerImg} alt="" />
     </SFooter>
   );
 }
