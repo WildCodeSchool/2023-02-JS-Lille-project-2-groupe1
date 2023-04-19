@@ -6,8 +6,10 @@ const itemControllers = require("./controllers/itemControllers");
 
 router.get("/items", itemControllers.browse);
 router.get("/items/:id", itemControllers.read);
-router.put("/items/:id", itemControllers.edit);
-router.post("/items", itemControllers.add);
-router.delete("/items/:id", itemControllers.destroy);
+
+const musicControllers = require("./controllers/musicsControllers");
+
+router.get("/musics", musicControllers.browse);
+router.get("/musics/:id", musicControllers.read);
 
 module.exports = router;

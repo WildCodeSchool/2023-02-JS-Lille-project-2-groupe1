@@ -1,8 +1,8 @@
 const AbstractManager = require("./AbstractManager");
 
-class ItemManager extends AbstractManager {
+class MusicManager extends AbstractManager {
   constructor() {
-    super({ table: "items" });
+    super({ table: "music" });
   }
 
   insert(item) {
@@ -19,4 +19,4 @@ class ItemManager extends AbstractManager {
   }
 }
 
-module.exports = ItemManager;
+module.exports = MusicManager;
