@@ -1,4 +1,4 @@
-import SCard from "./CardStyle";
+/* import SCard from "./CardStyle";
 import cardImg from "../../assets/Card.svg";
 
 export default function Card() {
@@ -12,3 +12,4 @@ export default function Card() {
     </SCard>
   );
 }
+ */

@@ -11,7 +11,16 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "styled-components": "^5.3.9",
-    "styled-reset": "^4.4.6"
+    "styled-reset": "^4.4.6",
+    "bootstrap": "^3.4.1",
+    "nodemon": "^2.0.22",
+    "react-bootstrap": "^2.7.4",
+    "react-bootstrap-icons": "^1.10.3",
+    "react-icons": "^4.8.0",
+    "react-router-dom": "^6.10.0",
+    "react-simple-star-rating": "^5.1.7",
+    "uuid": "^9.0.0",
+    "web-vitals-reporter": "^1.0.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^3.0.1",
