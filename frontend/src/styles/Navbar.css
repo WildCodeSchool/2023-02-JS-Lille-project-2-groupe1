@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  height: 200px;
+  flex-direction: row;
+  justify-content: center;
+  background-image: url("../assets/Navbarimg7777.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.cartIcon {
+  width: 25px;
+  height: auto;
+}
+
+.notifBtn {
+  background-color: red;
+  border: none;
+  border-radius: 50%;
+}
