@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
-import Houseware from "../components/Houseware/Houseware";
-import { getHouseware } from "../services/api-calls";
-import "bootstrap/dist/css/bootstrap.min.css";
+import Houseware from "./Houseware";
+import { getHouseware } from "../../services/api-calls";
 
 function HousewareList({ handleAddArticle }) {
   const [housewares, setHousewares] = useState([]);

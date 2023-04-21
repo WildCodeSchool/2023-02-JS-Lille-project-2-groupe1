@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import HousewareList from "./pages/HousewareList";
+import HousewareList from "./components/Houseware/HousewareList";
 import Navbar from "./components/Navbar/Navbar";
-import "bootstrap/dist/css/bootstrap.min.css";
-import SideBar from "./components/SideBar/SideBar";
+// import SideBar from "./components/SideBar/SideBar";
 import Filter from "./components/Filter/Filter";
 import "./styles/App.css";
 
@@ -29,10 +28,7 @@ function App() {
   return (
     <>
       <Navbar aticleQuatity={articles.length} setShow={setShow} show={show} />
-
-      <div className="App">
-        <Home />
-      </div>
+      {/* Bouton du panier ICIIIIIIII */}
 
       <Filter />
 
@@ -43,12 +39,14 @@ function App() {
         />
       </Routes>
 
-      <SideBar
+      {/* <SideBar
         show={show}
         setShow={setShow}
         articles={articles}
         setArticles={setArticles}
-      />
+      /> */}
+
+      <Home />
     </>
   );
 }
