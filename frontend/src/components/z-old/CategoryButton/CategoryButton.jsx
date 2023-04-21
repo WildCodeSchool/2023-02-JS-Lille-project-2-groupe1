@@ -1,5 +1,5 @@
 import SCategory from "./CategoryButtonStyle";
-import categoryButton from "../../assets/CategoriesBtn.svg";
+import categoryButton from "../../../assets/CategoriesBtn.svg";
 
 export default function Category() {
   return (

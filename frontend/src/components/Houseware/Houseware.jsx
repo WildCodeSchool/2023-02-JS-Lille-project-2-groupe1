@@ -2,7 +2,8 @@ import React from "react";
 import { v4 as uuidv4 } from "uuid";
 import Stars from "../Stars/Stars";
 
-function Houseware({ houseware, handleAddArticle, houseware_2 }) {
+/* eslint-disable no-param-reassign */
+function Houseware({ note, houseware, handleAddArticle }) {
   houseware.id = uuidv4();
 
   return (
@@ -13,8 +14,9 @@ function Houseware({ houseware, handleAddArticle, houseware_2 }) {
 
       <img src={houseware.image_uri} alt="houseware illustration" />
 
-      <Stars note={houseware.note} />
+      <Stars note={note} />
       <button
+        type="button"
         onClick={() => handleAddArticle(houseware)}
         className="addToCartBtn"
       >
@@ -23,5 +25,5 @@ function Houseware({ houseware, handleAddArticle, houseware_2 }) {
     </div>
   );
 }
-
+/* eslint-enable no-param-reassign */
 export default Houseware;

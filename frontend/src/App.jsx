@@ -21,10 +21,10 @@ function App() {
 
   const [articles, setArticles] = useState([]);
 
-  async function handleAddArticle(article) {
-    const art = await generateid(article);
+  const handleAddArticle = (article) => {
+    const art = generateid(article);
     setArticles([...articles, art]);
-  }
+  };
 
   return (
     <>

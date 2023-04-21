@@ -49,6 +49,7 @@ function SideBar({ show, setShow, articles, setArticles }) {
 
                 <div className="columnRightCartArticle">
                   <button
+                    type="button"
                     key={article.cle}
                     onClick={() => handleDelete(article)}
                     className="btnDeleteCart"
