@@ -13,9 +13,16 @@
 }
 
 .modal-content {
+  display: flex;
   width: 25%;
   height: 100%;
   /* background-color: white; */
   padding: 25px;
   background-image: url("../assets/cartWallpaper.jpeg");
+}
+
+.cartCloseBtn {
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 20%;
 }

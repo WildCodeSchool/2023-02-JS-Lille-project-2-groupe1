@@ -14,56 +14,56 @@
 //     setArticles(articleCopy);
 //   };
 
-//   return (
+// return (
 //     <Offcanvas show={show} placement="end" onHide={handleClose}>
-//       <Offcanvas.Header closeButton>
-//         <Offcanvas.Title>Cart</Offcanvas.Title>
-//       </Offcanvas.Header>
-//       <Offcanvas.Body>
-//         <Stack>
-//           <div className="containerCart">
-//             {articles?.map((article) => (
-//               <div className="carteInCart">
-//                 <div className="columnLeftCartArticle">
-//                   <h6>
-//                     {article["sell-price"]
-//                       ? article["sell-price"]
-//                       : article.price}
-//                     ,00$
-//                   </h6>
+//         <Offcanvas.Header closeButton>
+//             <Offcanvas.Title>Cart</Offcanvas.Title>
+//         </Offcanvas.Header>
+//         <Offcanvas.Body>
+//             <Stack>
+//                 <div className="containerCart">
+//                     {articles?.map((article) => (
+//                         <div className="carteInCart">
+//                             <div className="columnLeftCartArticle">
+//                                 <h6>
+//                                     {article["sell-price"]
+//                                         ? article["sell-price"]
+//                                         : article.price}
+//                                     ,00$
+//                                 </h6>
 
-//                   <h6>
-//                     {" "}
-//                     {article["name-USen"]
-//                       ? article["name-USen"]
-//                       : article}
-//                   </h6>
+//                                 <h6>
+//                                     {" "}
+//                                     {article["name-USen"]
+//                                         ? article["name-USen"]
+//                                         : article}
+//                                 </h6>
+//                             </div>
+
+//                             <div className="columnCenterCartArticle">
+//                                 <img src={article.image_uri} alt="" />
+//                                 <img src={article.image_url} alt="" />
+
+//                                 <Stars note={article.note} />
+//                             </div>
+
+//                             <div className="columnRightCartArticle">
+//                                 <button
+//                                     type="button"
+//                                     key={article.cle}
+//                                     onClick={() => handleDelete(article)}
+//                                     className="btnDeleteCart"
+//                                 >
+//                                     Delete
+//                                 </button>
+//                             </div>
+//                         </div>
+//                     ))}
 //                 </div>
-
-//                 <div className="columnCenterCartArticle">
-//                   <img src={article.image_uri} alt="" />
-//                   <img src={article.image_url} alt="" />
-
-//                   <Stars note={article.note} />
-//                 </div>
-
-//                 <div className="columnRightCartArticle">
-//                   <button
-//                     type="button"
-//                     key={article.cle}
-//                     onClick={() => handleDelete(article)}
-//                     className="btnDeleteCart"
-//                   >
-//                     Delete
-//                   </button>
-//                 </div>
-//               </div>
-//             ))}
-//           </div>
-//         </Stack>
-//       </Offcanvas.Body>
+//             </Stack>
+//         </Offcanvas.Body>
 //     </Offcanvas>
-//   );
+// );
 // }
 
 // export default SideBar;

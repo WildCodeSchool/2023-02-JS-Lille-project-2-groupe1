@@ -1,5 +1,4 @@
 import React from "react";
-// eslint-disable-file jsx-a11y/no-static-element-interactions
 
 function Cart({ children, shown, close }) {
   return shown ? (
@@ -21,7 +20,8 @@ function Cart({ children, shown, close }) {
         onKeyDown={(e) => e.stopPropagation()}
       >
         <h1>Je suis un objet dans le panier</h1>
-        <button type="button" onClick={() => close()}>
+
+        <button className="cartCloseBtn" type="button" onClick={() => close()}>
           Fermer le panier
         </button>
       </div>

@@ -30,8 +30,6 @@ function App() {
       <Navbar aticleQuatity={articles.length} setShow={setShow} show={show} />
       {/* Bouton du panier ICIIIIIIII */}
 
-      <Filter />
-
       <Routes>
         <Route
           path="/Houseware"
@@ -39,14 +37,8 @@ function App() {
         />
       </Routes>
 
-      {/* <SideBar
-        show={show}
-        setShow={setShow}
-        articles={articles}
-        setArticles={setArticles}
-      /> */}
-
       <Home />
+      <Filter />
     </>
   );
 }
