@@ -7,27 +7,30 @@ import Navbar from "./components/Navbar/Navbar";
 import Filter from "./components/Filter/Filter";
 import "./styles/App.css";
 
+
+
+
 function App() {
   const [show, setShow] = useState(false);
 
-  async function generateid(article) {
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(article);
-      }, 500);
-    });
-  }
+  // async function generateid(article) {
+  //   return new Promise((resolve) => {
+  //     setTimeout(() => {
+  //       resolve(article);
+  //     }, 500);
+  //   });
+  // }
 
   const [articles, setArticles] = useState([]);
 
   const handleAddArticle = (article) => {
-    const art = generateid(article);
-    setArticles([...articles, art]);
+
+    setArticles([...articles, article]);
   };
 
   return (
     <>
-      <Navbar aticleQuatity={articles.length} setShow={setShow} show={show} />
+      <Navbar setShow={setShow} show={show} articles={articles} setArticles={setArticles} />
       {/* Bouton du panier ICIIIIIIII */}
 
       <Routes>
@@ -39,6 +42,11 @@ function App() {
 
       <Home />
       <Filter />
+      {/* <Cart
+        articles={articles}
+        setArticles={setArticles}
+      /> */}
+
     </>
   );
 }

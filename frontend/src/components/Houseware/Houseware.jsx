@@ -3,8 +3,10 @@ import { v4 as uuidv4 } from "uuid";
 import Stars from "../Stars/Stars";
 
 /* eslint-disable no-param-reassign */
-function Houseware({ note, houseware, handleAddArticle }) {
+function Houseware({ note, houseware_2, houseware, handleAddArticle }) {
   houseware.id = uuidv4();
+
+  // console.log(houseware_2);
 
   return (
     <div className="carte">
@@ -16,13 +18,15 @@ function Houseware({ note, houseware, handleAddArticle }) {
 
       <Stars note={note} />
       <button
-        type="button"
+        
         onClick={() => handleAddArticle(houseware)}
         className="addToCartBtn"
       >
         Ajouter
       </button>
+      
     </div>
+    
   );
 }
 /* eslint-enable no-param-reassign */

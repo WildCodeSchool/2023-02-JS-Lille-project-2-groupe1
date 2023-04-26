@@ -26,3 +26,8 @@
   margin-top: 5px;
   margin-left: 20%;
 }
+
+.containerCart {
+  background-color: red;
+  width: 80%;
+}

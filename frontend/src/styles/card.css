@@ -83,7 +83,11 @@
   margin-right: 10px;
 }
 
-.columnLeftCartArticle {
+.addToCartBtn.a:hover {
+  background-color: bisque;
+}
+
+/* .columnLeftCartArticle {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -112,4 +116,4 @@
   background-color: rgba(230, 96, 69, 0.5);
   padding: 10px;
   margin-right: 10px;
-}
+} */

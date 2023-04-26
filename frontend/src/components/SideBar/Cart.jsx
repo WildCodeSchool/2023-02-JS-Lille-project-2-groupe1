@@ -1,6 +1,9 @@
 import React from "react";
+import CartItem from "./CartItem";
 
-function Cart({ children, shown, close }) {
+
+function Cart({ children, shown, close, articles, setArticles }) {
+  
   return shown ? (
     <div
       role="presentation"
@@ -24,9 +27,11 @@ function Cart({ children, shown, close }) {
         <button className="cartCloseBtn" type="button" onClick={() => close()}>
           Fermer le panier
         </button>
+        
+        <CartItem articles={articles} setArticles={setArticles}/>
       </div>
 
-      {children}
+       {children} 
     </div>
   ) : null;
 }
