@@ -1,4 +1,3 @@
-import Button from "react-bootstrap/Button";
 import { useNavigate } from "react-router-dom";
 
 function Filter() {
@@ -8,9 +7,6 @@ function Filter() {
     navigate(`/${value}`);
   };
 
-  const handleHouseware = () => {
-    navigate(`/Houseware`);
-  };
   return (
     <div className="filterContainer">
       <select
@@ -22,16 +18,7 @@ function Filter() {
         <option value="Houseware">Houseware</option>
       </select>
 
-      <div className="Header">
-        <Button
-          className="btn"
-          onClick={() => handleHouseware()}
-          size="lg"
-          variant="warning"
-        >
-          Houseware
-        </Button>
-      </div>
+      <div className="Header"> </div>
     </div>
   );
 }
