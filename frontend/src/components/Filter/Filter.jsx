@@ -10,6 +10,7 @@ function Filter() {
   const handleHouseware = () => {
     navigate(`/Houseware`);
   };
+
   return (
     <div className="filterContainer">
       <select

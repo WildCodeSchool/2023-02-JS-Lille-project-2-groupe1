@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import HousewareList from "./components/Houseware/HousewareList";
+import HousewareList from "./components/CardHouseware/HousewareList";
 import Navbar from "./components/Navbar/Navbar";
 // import SideBar from "./components/SideBar/SideBar";
 import Filter from "./components/Filter/Filter";
