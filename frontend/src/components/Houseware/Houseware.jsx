@@ -1,11 +1,7 @@
 import React from "react";
-import { v4 as uuidv4 } from "uuid";
 import Stars from "../Stars/Stars";
 
-
 function Houseware({ note, houseware, handleAddArticle }) {
-  houseware.id = uuidv4();
-  
   return (
     <div className="carte">
       <h5>{houseware.name["name-EUfr"]}</h5>

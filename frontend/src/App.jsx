@@ -26,7 +26,6 @@ function App() {
 
   return (
     <>
-
       {/* Bouton du panier ICIIIIIIII */}
 
       <Routes>
@@ -44,10 +43,8 @@ function App() {
       />
 
       <Filter />
-      
+
       <Home />
-
-
     </>
   );
 }
