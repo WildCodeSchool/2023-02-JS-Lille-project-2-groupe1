@@ -78,13 +78,14 @@
   border-radius: 16px;
   padding: 0;
   margin: 0;
-  background-color: rgb(69, 189, 230, 0.5);
+  background-color: rgba(74, 202, 245, 0.5);
   padding: 10px;
   margin-right: 10px;
 }
 
-.addToCartBtn.a:hover {
-  background-color: bisque;
+.addToCartBtn:hover {
+  background-color: rgba(50, 136, 165, 0.719);
+  
 }
 
 /* .columnLeftCartArticle {

@@ -2,12 +2,8 @@ import { useState } from "react";
 import Cart from "@components/SideBar/Cart";
 import SNavbar from "./NavbarStyle";
 
-
-export default function Navbar({articles, setArticles}) {
-  
+export default function Navbar({ articles, setArticles }) {
   const [shown, setShown] = useState(false);
-
-
 
   return (
     <SNavbar>
@@ -30,7 +26,6 @@ export default function Navbar({articles, setArticles}) {
             setShown(false);
           }}
         />
-        
       </div>
     </SNavbar>
   );

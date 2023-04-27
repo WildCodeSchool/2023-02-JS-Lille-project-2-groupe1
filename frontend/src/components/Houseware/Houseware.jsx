@@ -2,12 +2,10 @@ import React from "react";
 import { v4 as uuidv4 } from "uuid";
 import Stars from "../Stars/Stars";
 
-/* eslint-disable no-param-reassign */
-function Houseware({ note, houseware_2, houseware, handleAddArticle }) {
+
+function Houseware({ note, houseware, handleAddArticle }) {
   houseware.id = uuidv4();
-
-  // console.log(houseware_2);
-
+  
   return (
     <div className="carte">
       <h5>{houseware.name["name-EUfr"]}</h5>
@@ -18,16 +16,14 @@ function Houseware({ note, houseware_2, houseware, handleAddArticle }) {
 
       <Stars note={note} />
       <button
-        
+        type="button"
         onClick={() => handleAddArticle(houseware)}
         className="addToCartBtn"
       >
         Ajouter
       </button>
-      
     </div>
-    
   );
 }
-/* eslint-enable no-param-reassign */
+
 export default Houseware;

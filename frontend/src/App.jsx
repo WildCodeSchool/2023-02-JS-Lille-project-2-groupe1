@@ -7,9 +7,6 @@ import Navbar from "./components/Navbar/Navbar";
 import Filter from "./components/Filter/Filter";
 import "./styles/App.css";
 
-
-
-
 function App() {
   const [show, setShow] = useState(false);
 
@@ -24,13 +21,12 @@ function App() {
   const [articles, setArticles] = useState([]);
 
   const handleAddArticle = (article) => {
-
     setArticles([...articles, article]);
   };
 
   return (
     <>
-      <Navbar setShow={setShow} show={show} articles={articles} setArticles={setArticles} />
+
       {/* Bouton du panier ICIIIIIIII */}
 
       <Routes>
@@ -40,12 +36,17 @@ function App() {
         />
       </Routes>
 
-      <Home />
-      <Filter />
-      {/* <Cart
+      <Navbar
+        setShow={setShow}
+        show={show}
         articles={articles}
         setArticles={setArticles}
-      /> */}
+      />
+
+      <Filter />
+      
+      <Home />
+
 
     </>
   );
