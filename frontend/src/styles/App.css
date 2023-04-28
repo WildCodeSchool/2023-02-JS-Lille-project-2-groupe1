@@ -3,6 +3,7 @@
 @import "./Cart.css";
 @import "./Navbar.css";
 @import "./cart.css";
+@import "./ButtonFilter.css";
 
 html {
   background-color: #f6eee1;
