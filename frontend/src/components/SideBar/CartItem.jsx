@@ -14,16 +14,13 @@ function CartItem({ articles, setArticles }) {
       {articles?.map((article) => (
         <div className="itemInCart">
           <div className="cartImage">
-            <img src={article.image_uri} alt="" />
-            <img src={article.image_url} alt="" />
+            <img src={article.image} alt="" />
           </div>
 
-          <h3 className="cartName">
-            {article.name["name-USen"] ? article.name["name-USen"] : article}
-          </h3>
+          <h3 className="cartName">{article.name}</h3>
 
           <div className="cartPrice">
-            {article["sell-price"] ? article["sell-price"] : article.price}
+            {article.buy_price}
             ,00 Clochettes
           </div>
 
