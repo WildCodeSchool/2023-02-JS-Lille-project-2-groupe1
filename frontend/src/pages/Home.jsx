@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Cart from "@components/SideBar/Cart";
 import { Route, Routes } from "react-router-dom";
+
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import SHome from "./HomeStyle";
@@ -13,9 +14,7 @@ import OutilsList from "./OutilsList";
 
 function Home() {
   const [show, setShow] = useState(false);
-
   const [articles, setArticles] = useState([]);
-
   const handleAddArticle = (article) => {
     setArticles([...articles, article]);
   };

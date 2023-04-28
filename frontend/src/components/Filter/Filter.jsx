@@ -1,16 +1,15 @@
 import { useNavigate } from "react-router-dom";
 import ButtonFilter from "./ButtonFilter";
 
-const linkName = [
-  "Catalogue",
-  "Décoration",
-  "Outil",
-  "Recreation",
-  "Fourniture",
-  "Education",
-];
-
 function Filter() {
+  const linkName = [
+    "Catalogue",
+    "Décoration",
+    "Outil",
+    "Recreation",
+    "Fourniture",
+    "Education",
+  ];
   const navigate = useNavigate();
 
   const handleChange = (value) => {
