@@ -15,6 +15,7 @@
   padding: 10px;
   flex-wrap: wrap;
   padding: 5px;
+
   overflow-y: scroll;
   height: 400px;
   margin-right: 50px;
@@ -31,6 +32,9 @@
 .cart-container::-webkit-scrollbar-thumb {
   background: #FFA833;
   border-radius: 20px;
+
+  background-color: #f6eee1;
+
 }
 
 .containerDetails {
@@ -93,11 +97,14 @@
   border-radius: 16px;
   padding: 0;
   margin: 0;
-  background-color: rgb(69, 189, 230, 0.5);
+  background-color: rgba(74, 202, 245, 0.5);
   padding: 10px;
   margin-right: 10px;
 }
 
+.addToCartBtn:hover {
+  background-color: rgba(50, 136, 165, 0.719);
+}
 
 
 .columnCenterCartArticle {

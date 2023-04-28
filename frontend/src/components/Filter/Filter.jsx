@@ -7,6 +7,10 @@ function Filter() {
     navigate(`/${value}`);
   };
 
+  const handleHouseware = () => {
+    navigate(`/Houseware`);
+  };
+
   return (
     <div className="filterContainer">
       <select
@@ -18,7 +22,16 @@ function Filter() {
         <option value="Houseware">Houseware</option>
       </select>
 
-      <div className="Header"> </div>
+      <div className="Header">
+        <button
+          type="button"
+          className="btn"
+          onClick={() => handleHouseware()}
+          size="lg"
+        >
+          Houseware
+        </button>
+      </div>
     </div>
   );
 }
