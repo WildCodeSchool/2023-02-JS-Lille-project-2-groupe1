@@ -10,7 +10,12 @@ const baseUrl = "https://acnhapi.com/v1a";
   }).then((res) => res.json());
 } */
 
-function getHouseware() {
-  return fetch(`${baseUrl}/houseware`).then((res) => res.json());
+// function getHouseware() {
+//   return fetch(`${baseUrl}/houseware`).then((res) => res.json());
+// }
+
+function getItems() {
+  return fetch("http://localhost:5000/items").then((res) => res.json());
 }
-export { getHouseware };
+
+export { getItems };
