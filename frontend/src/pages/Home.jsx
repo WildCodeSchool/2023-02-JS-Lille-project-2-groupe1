@@ -1,36 +1,37 @@
-import Counter from "../components/Counter";
-import logo from "../assets/logo.svg";
+import { useState } from "react";
+import Cart from "@components/SideBar/Cart";
+import { Route, Routes } from "react-router-dom";
+import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
+import SHome from "./HomeStyle";
+import HousewareList from "./HousewareList";
 
-export default function Home() {
+function Home() {
+  const [show, setShow] = useState(false);
+
+  const [articles, setArticles] = useState([]);
+
+  const handleAddArticle = (article) => {
+    setArticles([...articles, article]);
+  };
   return (
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>Hello Vite + React !</p>
-
-      <Counter />
-
-      <p>
-        Edit <code>App.jsx</code> and save to test HMR updates.
-      </p>
-      <p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        {" | "}
-        <a
-          className="App-link"
-          href="https://vitejs.dev/guide/features.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Vite Docs
-        </a>
-      </p>
-    </header>
+    <SHome>
+      <Routes>
+        <Route
+          path="/Houseware"
+          element={<HousewareList handleAddArticle={handleAddArticle} />}
+        />
+      </Routes>
+      <Navbar
+        setShow={setShow}
+        show={show}
+        articles={articles}
+        setArticles={setArticles}
+      />
+      <Cart />
+      <Footer />
+    </SHome>
   );
 }
+
+export default Home;

@@ -1,13 +1,14 @@
+import React from "react";
 import Home from "./pages/Home";
-
-import "./App.css";
+import Filter from "./components/Filter/Filter";
+import "./styles/App.css";
 
 function App() {
   return (
-    <div className="App">
+    <>
+      <Filter />
       <Home />
-      <p>coucou</p>
-    </div>
+    </>
   );
 }
 

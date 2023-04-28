@@ -1,0 +1,9 @@
+@import "./Filter.css";
+@import "./Card.css";
+@import "./Cart.css";
+@import "./Navbar.css";
+@import "./cart.css";
+
+html {
+  background-color: #f6eee1;
+}
