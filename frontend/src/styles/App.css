@@ -4,14 +4,13 @@
 @import "./Navbar.css";
 @import "./cart.css";
 
-
 * {
   --background: #f6eee1;
   --brown-nook-color: #7e5939;
   --button-border-radius: 15px;
   --jackpot-primary: #bfa655;
   --jackpot-secondary: #f5a96e;
-  --global-font: 'Roboto', sans-serif;
+  --global-font: "Roboto", sans-serif;
   --title-size: 1.7rem;
   --text-size: 1rem;
   --button-background-article: #87d4fb;
@@ -27,8 +26,6 @@
   --button-font-family: "Roboto";
 }
 
-
 html {
   background-color: var(--background);
-  
 }

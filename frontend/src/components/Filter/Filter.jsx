@@ -21,8 +21,7 @@ function Filter() {
 
         <option value="Houseware">Houseware</option>
       </select>
-    
-      
+
       <div className="Header">
         <button
           type="button"
