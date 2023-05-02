@@ -1,3 +1,5 @@
+
+
 select {
   padding: 8px;
   font-size: 16px;
@@ -16,6 +18,27 @@ select {
   background-color: #f6eee1;
   margin-top: 190px;
 }
+
+
+.btn {
+  cursor: pointer;
+  padding: 10px;
+  margin-left: 10px;
+  border: var(--button-border);
+  background-color: var(--button-background-filter);
+  font-size: var(--button-font-size);
+  text-align: var(--button-text-align);
+  color: var(--button-color);
+  letter-spacing: var(--button-letter-spacing);
+  font-family: var(--button-font-family);
+  font-weight: var(--button-font-weight);
+  border-radius: var(--button-border-radius);
+  
+
+}
+
+
 .SelectFilter {
   display: none;
+
 }
