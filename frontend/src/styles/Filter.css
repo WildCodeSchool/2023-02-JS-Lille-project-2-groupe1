@@ -1,3 +1,5 @@
+
+
 select {
   padding: 8px;
   font-size: 16px;
@@ -25,5 +27,23 @@ select:focus {
 }
 
 .btn {
+  cursor: pointer;
+  padding: 10px;
   margin-left: 10px;
+  border: var(--button-border);
+  background-color: var(--button-background-filter);
+  font-size: var(--button-font-size);
+  text-align: var(--button-text-align);
+  color: var(--button-color);
+  letter-spacing: var(--button-letter-spacing);
+  font-family: var(--button-font-family);
+  font-weight: var(--button-font-weight);
+  border-radius: var(--button-border-radius);
+  
+
+}
+
+.textTest {
+  font-family: var(--global-font);
+  font-size: var(--title-size);
 }

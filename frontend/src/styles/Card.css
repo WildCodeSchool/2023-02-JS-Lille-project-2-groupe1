@@ -86,34 +86,3 @@
 .addToCartBtn:hover {
   background-color: rgba(50, 136, 165, 0.719);
 }
-
-/* .columnLeftCartArticle {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.columnCenterCartArticle {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.columnRightCartArticle {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.btnDeleteCart {
-  border: none;
-  border-radius: 16px;
-  padding: 0;
-  margin: 0;
-  background-color: rgba(230, 96, 69, 0.5);
-  padding: 10px;
-  margin-right: 10px;
-} */

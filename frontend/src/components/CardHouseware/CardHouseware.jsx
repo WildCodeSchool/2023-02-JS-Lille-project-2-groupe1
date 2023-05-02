@@ -5,9 +5,10 @@ import Stars from "../Stars/Stars";
 function CardHouseware({ note, houseware, handleAddArticle }) {
   return (
     <div className="carte">
+      
       <h5>{houseware.name}</h5>
       <h5>price : {houseware.buy_price}</h5>
-      <img src={houseware.image} alt="" />
+      <img src={houseware.image} alt="article's image" />
       <Stars note={note} />
       <button
         type="button"
