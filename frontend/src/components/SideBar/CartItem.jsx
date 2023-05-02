@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+
 
 function CartItem({ articles, setArticles }) {
+
+  const totalValue = articles.reduce((accumulator, currentItem) => accumulator + currentItem.buy_price, 0);
+
   const handleDelete = (articleToDelete) => {
     const articleCopy = articles.filter(
       (article) => article.id !== articleToDelete.id
@@ -9,10 +13,15 @@ function CartItem({ articles, setArticles }) {
     setArticles(articleCopy);
   };
 
+
   return (
     <div className="containerCart">
+
+      <h2>Total du panier : {totalValue}</h2>
+      <button onClick={() => setArticles([])}>Vider le panier</button>
       {articles?.map((article) => (
         <div className="itemInCart">
+
           <div className="cartImage">
             <img src={article.image} alt="" />
           </div>
@@ -25,21 +34,18 @@ function CartItem({ articles, setArticles }) {
           </div>
 
           <div className="cartQuantityAndButton">
-            <label htmlFor="quantity">Quantité</label>
-            <input
-              id="quantity"
-              type="number"
-              name="quantity"
-              defaultValue="1"
-              min="1"
-            />
+
+            <button onClick={() => setArticles(articles.push(article))}>Ajouter</button>
+
+
+
             <button
               type="button"
               key={article.cle}
               onClick={() => handleDelete(article)}
               className="btnDeleteCart"
             >
-              Delete
+              Supprimer
             </button>
           </div>
         </div>

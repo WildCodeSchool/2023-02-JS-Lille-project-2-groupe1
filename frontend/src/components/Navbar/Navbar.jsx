@@ -1,6 +1,9 @@
 import { useState } from "react";
 import Cart from "@components/SideBar/Cart";
 import SNavbar from "./NavbarStyle";
+import BulleCart from "../../assets/BulleCart.svg"
+
+
 
 export default function Navbar({ articles, setArticles }) {
   const [shown, setShown] = useState(false);
@@ -8,15 +11,18 @@ export default function Navbar({ articles, setArticles }) {
   return (
     <SNavbar>
       <div className="header">
-        <button
+        <button 
+         
           type="button"
           className="cartBtn"
           onClick={() => {
             setShown(!shown);
           }}
         >
-          PANIER
+           <img src={BulleCart} className="cartIcon"/>
         </button>
+
+         
 
         <Cart
           articles={articles}

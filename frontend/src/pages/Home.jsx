@@ -15,6 +15,7 @@ function Home() {
   const handleAddArticle = (article) => {
     setArticles([...articles, article]);
   };
+  
   return (
     <SHome>
       <Routes>

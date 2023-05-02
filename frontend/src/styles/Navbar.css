@@ -9,19 +9,24 @@
   flex-direction: row;
   justify-content: right;
   background-image: url("../assets/Navbarimg7777.svg");
+
   background-size: contain;
   background-repeat: no-repeat;
   background-color: #f6eee1;
 }
 
 .cartBtn {
+  all: unset;
   margin-right: 30px;
   height: fit-content;
+  
 }
 
 .cartIcon {
-  width: 25px;
-  height: auto;
+  height: 80px;
+  width: auto;
+  margin-top: 30px;
+  margin-right: 5px;
 }
 
 .notifBtn {

@@ -6,8 +6,6 @@ import "./styles/App.css";
 function App() {
   return (
     <>
-      {/* Bouton du panier ICIIIIIIII */}
-
       <Filter />
 
       <Home />
