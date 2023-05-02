@@ -11,7 +11,7 @@ function HousewareList({ handleAddArticle }) {
         HousewareData.map((houseware) => ({
           ...houseware,
           note: Math.floor(Math.random() * 2) + 3,
-        })).slice(9, 17)
+        }))
       );
     });
   }, []);

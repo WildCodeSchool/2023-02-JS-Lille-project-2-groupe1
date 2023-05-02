@@ -3,7 +3,32 @@
 @import "./Cart.css";
 @import "./Navbar.css";
 @import "./cart.css";
+@import "./ButtonFilter.css";
+@import "./Modal.css";
+@import "./footer.css";
+
+* {
+  --background: #f6eee1;
+  --brown-nook-color: #7e5939;
+  --button-border-radius: 15px;
+  --jackpot-primary: #bfa655;
+  --jackpot-secondary: #f5a96e;
+  --global-font: "Roboto", sans-serif;
+  --title-size: 1.7rem;
+  --text-size: 1rem;
+  --button-background-article: #87d4fb;
+  /* button property */
+  --button-border: none;
+  --button-background-filter: #f5a96e;
+  --button-font-size: 1.5rem;
+  --button-text-align: center;
+  --button-color: #000;
+  --button-letter-spacing: 0.2px;
+  --button-font-style: normal;
+  --button-font-weight: 400;
+  --button-font-family: "Roboto";
+}
 
 html {
-  background-color: #f6eee1;
+  background-color: var(--background);
 }

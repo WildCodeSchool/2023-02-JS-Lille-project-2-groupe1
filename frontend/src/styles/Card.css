@@ -2,17 +2,16 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px;
 }
 
 .stars {
-  padding: 20px;
+  padding: 5px;
 }
 
 .cart-container {
   display: flex;
   justify-content: center;
-  padding: 10px;
+  padding: 50px;
   flex-wrap: wrap;
   padding: 5px;
 
@@ -44,8 +43,8 @@
 .carte {
   display: flex;
   flex-direction: column;
-  width: 290px;
-  height: 400px;
+  width: 200px;
+  height: 300px;
   padding: 10px;
   margin: 20px;
   align-items: center;
@@ -103,18 +102,4 @@
 
 .addToCartBtn:hover {
   background-color: rgba(50, 136, 165, 0.719);
-}
-
-.columnCenterCartArticle {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.columnRightCartArticle {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }

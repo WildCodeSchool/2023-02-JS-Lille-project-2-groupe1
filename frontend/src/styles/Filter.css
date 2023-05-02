@@ -9,13 +9,6 @@ select {
   appearance: none;
 }
 
-select:hover,
-select:focus {
-  outline: none;
-  border-color: #4c9aff;
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 0 1px #4c9aff;
-}
-
 .filterContainer {
   display: flex;
   flex-direction: row;
@@ -25,5 +18,20 @@ select:focus {
 }
 
 .btn {
+  cursor: pointer;
+  padding: 10px;
   margin-left: 10px;
+  border: var(--button-border);
+  background-color: var(--button-background-filter);
+  font-size: var(--button-font-size);
+  text-align: var(--button-text-align);
+  color: var(--button-color);
+  letter-spacing: var(--button-letter-spacing);
+  font-family: var(--button-font-family);
+  font-weight: var(--button-font-weight);
+  border-radius: var(--button-border-radius);
+}
+
+.SelectFilter {
+  display: none;
 }
