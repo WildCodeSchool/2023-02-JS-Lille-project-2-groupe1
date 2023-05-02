@@ -3,6 +3,10 @@
 @import "./Cart.css";
 @import "./Navbar.css";
 @import "./cart.css";
+@import "./ButtonFilter.css";
+@import "./Modal.css";
+@import "./footer.css";
+
 
 
 * {
@@ -26,7 +30,6 @@
   --button-font-weight: 400;
   --button-font-family: "Roboto";
 }
-
 
 html {
   background-color: var(--background);

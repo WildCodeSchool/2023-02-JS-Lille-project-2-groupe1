@@ -4,7 +4,9 @@ import footerImg from "../../assets/Footerimg.svg";
 export default function Footer() {
   return (
     <SFooter>
-      <img src={footerImg} alt="" />
+      <div className="footer">
+        <img src={footerImg} alt="" />
+      </div>
     </SFooter>
   );
 }

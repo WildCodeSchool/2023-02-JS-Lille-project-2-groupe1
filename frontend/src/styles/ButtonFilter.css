@@ -1,0 +1,15 @@
+.btnFilter {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.filterButton {
+  padding: 1%;
+  margin-right: 2%;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  background-color: rgba(209, 173, 56, 0.2);
+}
