@@ -19,7 +19,6 @@
   overflow-y: scroll;
   height: 400px;
   margin-right: 50px;
-
 }
 
 /* .cart-container::scrollbar {
@@ -106,7 +105,6 @@
   background-color: rgba(50, 136, 165, 0.719);
 }
 
-
 .columnCenterCartArticle {
   display: flex;
   flex-direction: column;
@@ -120,4 +118,3 @@
   align-items: center;
   justify-content: center;
 }
-
