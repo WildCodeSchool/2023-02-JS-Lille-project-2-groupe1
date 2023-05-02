@@ -6,5 +6,5 @@ export default styled.footer`
     left: 0;
     bottom: 0;
     width: 100%;
-  }
+     
 `;
