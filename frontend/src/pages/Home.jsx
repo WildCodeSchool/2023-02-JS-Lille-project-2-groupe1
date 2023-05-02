@@ -2,6 +2,7 @@ import { useState } from "react";
 import Cart from "@components/SideBar/Cart";
 import { Route, Routes } from "react-router-dom";
 
+import Modal from "@components/Modal/Modal";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import SHome from "./HomeStyle";
@@ -13,13 +14,23 @@ import RecreationList from "./RecreationList";
 import OutilsList from "./OutilsList";
 
 function Home() {
+  const [openModal, setOpenModal] = useState(false);
   const [show, setShow] = useState(false);
   const [articles, setArticles] = useState([]);
   const handleAddArticle = (article) => {
-    setArticles([...articles, article]);
+    const isInthecard = articles.find(
+      (articleaAjouter) => articleaAjouter.id === article.id
+    );
+    if (isInthecard) {
+      setOpenModal(true);
+    } else {
+      setArticles([...articles, article]);
+    }
   };
+
   return (
     <SHome>
+      {openModal && <Modal setOpenModal={setOpenModal} />}
       <Routes>
         <Route
           path="/Catalogue"
