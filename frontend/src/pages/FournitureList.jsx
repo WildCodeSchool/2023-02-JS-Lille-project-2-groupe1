@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import CardProduct from "@components/CartProduct/CartdProduct";
 import { getItems } from "../services/api-calls";
 
-function FournitureList({ handleAddArticle }) {
+function FournitureList({ handleAddArticle, articlesInCart }) {
   const [fourniture, setFourniture] = useState([]);
   useEffect(() => {
     getItems().then((itemsData) => {
@@ -20,6 +20,7 @@ function FournitureList({ handleAddArticle }) {
     <div className="cart-container">
       {fourniture.map((Fourniture) => (
         <CardProduct
+          articlesInCart={articlesInCart}
           key={Fourniture.id}
           note={Fourniture.note}
           Product={Fourniture}

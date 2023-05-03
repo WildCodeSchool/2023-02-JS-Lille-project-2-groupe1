@@ -13,6 +13,7 @@
 }
 
 .modal-content {
+  overflow-y: scroll;
   display: flex;
   flex-direction: column;
   width: 25%;
