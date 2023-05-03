@@ -21,15 +21,16 @@ function Filter() {
 
       <div className="btnFilter">
         {linkName.map((link) => (
-          <ButtonFilter link={`/${link}`} name={link} />
+          <ButtonFilter link={`/${link}`} name={link} key={`${link}}`} />
+
         ))}
       </div>
       <div className="SelectFilter">
         <select
           className="select "
           onChange={(event) => handleChange(event.target.value)}
+        >
 
-        
           <option value="">Select category </option>
           <option value="Catalogue">All Categories </option>
           <option value="Recreation">Recreation</option>

@@ -1,49 +1,71 @@
-import React from "react";
+import { useState } from "react";
 
 function CartItem({ articles, setArticles }) {
+  const [totalPriceMultipleItems, setTotalPriceMultipleItems] = useState(0);
+  const [totalValue, setTotalValue] = useState(
+    articles.reduce(
+      (accumulator, currentItem) => accumulator + currentItem.buy_price,
+      0
+    )
+  );
+
   const handleDelete = (articleToDelete) => {
     const articleCopy = articles.filter(
       (article) => article.id !== articleToDelete.id
     );
 
     setArticles(articleCopy);
+    setTotalPriceMultipleItems(0);
+  };
+
+  const handleMultipleArticle = (price) => {
+    setTotalValue(totalValue + price);
+    setTotalPriceMultipleItems(totalPriceMultipleItems + price);
   };
 
   return (
     <div className="containerCart">
-      {articles?.map((article) => (
-        <div className="itemInCart">
-          <div className="cartImage">
-            <img src={article.image} alt="" />
-          </div>
+      <h2>Total du panier : {totalValue}</h2>
+      <button type="button" onClick={() => setArticles([])}>
+        Vider le panier
+      </button>
+      {articles?.map((article) => {
+        return (
+          <div className="itemInCart" key={`art-in-cart-${article.id}`}>
+            <div className="cartImage">
+              <img src={article.image} alt="" />
+            </div>
 
-          <h3 className="cartName">{article.name}</h3>
+            <h3 className="cartName">{article.name}</h3>
 
-          <div className="cartPrice">
-            {article.buy_price}
-            ,00 Clochettes
-          </div>
+            <div className="cartPrice">
+              {article.buy_price}
+              ,00 Clochettes
+              <br />
+              {totalPriceMultipleItems}
+              ,00 Clochettes
+            </div>
 
-          <div className="cartQuantityAndButton">
-            <label htmlFor="quantity">Quantité</label>
-            <input
-              id="quantity"
-              type="number"
-              name="quantity"
-              defaultValue="1"
-              min="1"
-            />
-            <button
-              type="button"
-              key={article.cle}
-              onClick={() => handleDelete(article)}
-              className="btnDeleteCart"
-            >
-              Delete
-            </button>
+            <div className="cartQuantityAndButton">
+              <button
+                type="button"
+                onClick={() => handleMultipleArticle(article.buy_price)}
+              >
+                Ajouter
+              </button>
+
+              <button
+                type="button"
+                key={article.cle}
+                onClick={() => handleDelete(article)}
+                className="btnDeleteCart"
+              >
+                Supprimer
+              </button>
+            </div>
           </div>
-        </div>
-      ))}
+        );
+      })}
     </div>
   );
 }

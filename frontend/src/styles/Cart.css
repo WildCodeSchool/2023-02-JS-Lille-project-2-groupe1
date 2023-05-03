@@ -13,11 +13,14 @@
 }
 
 .modal-content {
+  overflow-y: scroll;
   display: flex;
   flex-direction: column;
   width: 25%;
   height: 100%;
-  background-image: url("../assets/cartWallpaper.jpeg");
+
+  background-image: url("../assets/Recipe_Info_Background.svg");
+
   align-items: center;
 }
 
@@ -29,7 +32,6 @@
 
 .containerCart {
   width: 100%;
-
   border: solid black 1px;
 }
 

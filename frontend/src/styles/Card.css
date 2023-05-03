@@ -14,7 +14,9 @@
   padding: 50px;
   flex-wrap: wrap;
   padding: 5px;
-  background-color: #f6eee1;
+  overflow-y: scroll;
+  height: 400px;
+  margin-right: 50px;
 }
 
 .containerDetails {
@@ -72,7 +74,7 @@
   height: 100px;
 }
 
-.addToCartBtn {
+.notInCartBtn {
   border: none;
   border-radius: 16px;
   padding: 0;
@@ -82,6 +84,12 @@
   margin-right: 10px;
 }
 
-.addToCartBtn:hover {
+.notInCartBtn:hover {
   background-color: rgba(50, 136, 165, 0.719);
 }
+
+
+.inCartBtn {
+  display: none;
+}
+
