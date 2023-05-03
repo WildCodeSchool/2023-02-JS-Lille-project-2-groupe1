@@ -2,7 +2,9 @@ import { useEffect, useState } from "react";
 import CardProduct from "@components/CartProduct/CartdProduct";
 import { getItems } from "../services/api-calls";
 
+
 function RecreationList({ handleAddArticle, articlesInCart }) {
+
   const [recreation, setRecreation] = useState([]);
   useEffect(() => {
     getItems().then((itemsData) => {
@@ -20,7 +22,9 @@ function RecreationList({ handleAddArticle, articlesInCart }) {
     <div className="cart-container">
       {recreation.map((Recreation) => (
         <CardProduct
+
           articlesInCart={articlesInCart}
+
           key={Recreation.id}
           note={Recreation.note}
           Product={Recreation}

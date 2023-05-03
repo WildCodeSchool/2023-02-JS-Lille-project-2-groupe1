@@ -18,7 +18,9 @@
   flex-direction: column;
   width: 25%;
   height: 100%;
+
   background-image: url("../assets/Recipe_Info_Background.svg");
+
   align-items: center;
 }
 

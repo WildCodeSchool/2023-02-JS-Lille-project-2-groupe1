@@ -1,3 +1,4 @@
+
 // function Modal({ setOpenModal }) {
 //   return (
 //     <div className="modalcontainer">
@@ -16,3 +17,4 @@
 // }
 
 // export default Modal;
+
