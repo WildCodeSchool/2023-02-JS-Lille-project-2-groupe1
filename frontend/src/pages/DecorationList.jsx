@@ -2,7 +2,9 @@ import { useEffect, useState } from "react";
 import CardProduct from "@components/CartProduct/CartdProduct";
 import { getItems } from "../services/api-calls";
 
+
 function DecorationList({ handleAddArticle, articlesInCart }) {
+
   const [decoration, setDecoration] = useState([]);
   useEffect(() => {
     getItems().then((itemsData) => {
@@ -21,6 +23,7 @@ function DecorationList({ handleAddArticle, articlesInCart }) {
       {decoration.map((Decoration) => (
         <CardProduct
           articlesInCart={articlesInCart}
+
           key={Decoration.id}
           note={Decoration.note}
           Product={Decoration}
