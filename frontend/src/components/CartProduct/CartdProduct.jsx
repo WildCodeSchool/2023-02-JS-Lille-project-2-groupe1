@@ -1,12 +1,10 @@
 import React from "react";
 import Stars from "../Stars/Stars";
 
-
 function CardProduct({ note, Product, handleAddArticle, articlesInCart }) {
   const alreadyInCart = articlesInCart.find(
     (articleInCart) => articleInCart.id === Product.id
   );
-
 
   return (
     <div className="carte">
@@ -20,7 +18,6 @@ function CardProduct({ note, Product, handleAddArticle, articlesInCart }) {
         type="button"
         onClick={() => handleAddArticle(Product)}
         className={alreadyInCart ? "inCartBtn" : "notInCartBtn"}
-
       >
         Ajouter
       </button>

@@ -1,6 +1,6 @@
 .btnFilter {
   display: flex;
-  width: 100%;
+  width: 80%;
   justify-content: center;
   flex-wrap: nowrap;
 }
@@ -8,8 +8,85 @@
 .filterButton {
   padding: 1%;
   margin-right: 2%;
-  border: none;
-  border-radius: 10px;
-  font-weight: 700;
-  background-color: rgba(209, 173, 56, 0.2);
+  border: var(--button-border);
+  border-radius: var(--button-border-radius);
+  font-weight: var(--button-font-weight);
+  background-color: var(--button-background-filter);
+  font-family: var(--global-font);
+  letter-spacing: var(--button-letter-spacing);
+  color: var(--button-color);
+  font-size: var(--button-font-size);
+  text-align: var(--button-text-align);
+  box-shadow: var(--button-box-shadow);
+  cursor: pointer;
+  /* background-image: url('../assets/CategoriesBtn.svg'); */
+}
+
+.musicContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.musicButton {
+  margin-top: 2%;
+  margin-bottom: 10%;
+  border: var(--button-border);
+  border-radius: var(--button-border-radius);
+  font-weight: var(--button-font-weight);
+  background-color: var(--button-background-article);
+  font-family: var(--global-font);
+  letter-spacing: var(--button-letter-spacing);
+  color: var(--button-color);
+  font-size: 1rem;
+  text-align: var(--button-text-align);
+  box-shadow: var(--button-box-shadow);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .btnFilter {
+    display: grid;
+    grid-template-columns: repeat(3, 0.2fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 13px;
+    margin-bottom: 2%;
+  }
+
+  .filterButton {
+    margin-right: 0;
+    padding: 0;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .filterButton {
+    font-size: 0.7rem;
+    padding: 2.5%;
+  }
+
+  .btnFilter {
+    display: grid;
+    grid-template-columns: repeat(3, 0.2fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 13px;
+    margin-bottom: 0.2%;
+  }
+
+  .musicContainer {
+    margin-right: -8%;
+    margin-top: 0.3%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 13px;
+    margin-bottom: 0.2%;
+  }
+
+  .musicButton {
+    font-size: 0.7rem;
+  }
 }

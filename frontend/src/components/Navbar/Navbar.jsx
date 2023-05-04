@@ -2,6 +2,7 @@ import { useState } from "react";
 import Cart from "@components/SideBar/Cart";
 import SNavbar from "./NavbarStyle";
 import BulleCart from "../../assets/BulleCart.svg";
+import navbarImg from "../../assets/newnavbar.svg";
 
 export default function Navbar({ articles, setArticles }) {
   const [shown, setShown] = useState(false);
@@ -9,6 +10,7 @@ export default function Navbar({ articles, setArticles }) {
   return (
     <SNavbar>
       <div className="header">
+        <img src={navbarImg} className="illustrationNavbar" alt="" />
         <button
           type="button"
           className="cartBtn"

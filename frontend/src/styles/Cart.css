@@ -88,3 +88,9 @@
   grid-area: 3 / 2 / 4 / 3;
   justify-self: center;
 }
+
+@media screen and (max-width: 1100px) {
+  .modal-content {
+    width: 80%;
+  }
+}

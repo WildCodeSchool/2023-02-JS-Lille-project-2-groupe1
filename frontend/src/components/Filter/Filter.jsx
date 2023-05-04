@@ -1,14 +1,15 @@
 import { useNavigate } from "react-router-dom";
+import Music from "@components/Music/Music";
 import ButtonFilter from "./ButtonFilter";
 
 function Filter() {
   const linkName = [
     "Catalogue",
-    "Décoration",
-    "Outil",
-    "Recreation",
-    "Fourniture",
-    "Education",
+    "Décorations",
+    "Outils",
+    "Récréation",
+    "Fournitures",
+    "Éducation",
   ];
   const navigate = useNavigate();
 
@@ -18,11 +19,10 @@ function Filter() {
 
   return (
     <div className="filterContainer">
-
+      <Music />
       <div className="btnFilter">
         {linkName.map((link) => (
-          <ButtonFilter link={`/${link}`} name={link} key={`${link}}`} />
-
+          <ButtonFilter link={`/${link}`} name={link} />
         ))}
       </div>
       <div className="SelectFilter">
@@ -30,11 +30,10 @@ function Filter() {
           className="select "
           onChange={(event) => handleChange(event.target.value)}
         >
-
           <option value="">Select category </option>
           <option value="Catalogue">All Categories </option>
           <option value="Recreation">Recreation</option>
-          <option value="Education">Education</option>
+          <option value="Education">Éducation</option>
           <option value="Décoration">Decoration</option>
           <option value="Fourniture">Fourniture </option>
           <option value="Outil">Outil </option>

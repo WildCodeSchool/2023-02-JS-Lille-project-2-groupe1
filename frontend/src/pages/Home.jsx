@@ -12,7 +12,6 @@ import RecreationList from "./RecreationList";
 import OutilsList from "./OutilsList";
 
 function Home() {
-  
   const [show, setShow] = useState(false);
   const [articles, setArticles] = useState([]);
   const handleAddArticle = (article) => {
@@ -32,7 +31,7 @@ function Home() {
           }
         />
         <Route
-          path="/Décoration"
+          path="/Décorations"
           element={
             <DecorationList
               handleAddArticle={handleAddArticle}
@@ -41,7 +40,7 @@ function Home() {
           }
         />
         <Route
-          path="/Education"
+          path="/Éducation"
           element={
             <EducationList
               handleAddArticle={handleAddArticle}
@@ -50,7 +49,7 @@ function Home() {
           }
         />
         <Route
-          path="/Fourniture"
+          path="/Fournitures"
           element={
             <FournitureList
               handleAddArticle={handleAddArticle}
@@ -59,7 +58,7 @@ function Home() {
           }
         />
         <Route
-          path="/Recreation"
+          path="/Récréation"
           element={
             <RecreationList
               handleAddArticle={handleAddArticle}
@@ -68,14 +67,14 @@ function Home() {
           }
         />
         <Route
-          path="/Outil"
+          path="/Outils"
           element={
             <OutilsList
               handleAddArticle={handleAddArticle}
               articlesInCart={articles}
             />
           }
-      />
+        />
       </Routes>
       <Navbar
         setShow={setShow}
