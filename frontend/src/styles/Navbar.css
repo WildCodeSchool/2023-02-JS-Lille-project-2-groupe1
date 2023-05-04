@@ -100,4 +100,9 @@
   .cartIcon {
     width: 25%;
   }
+
+  .header {
+    height: 80px;
+  }
+
 }
