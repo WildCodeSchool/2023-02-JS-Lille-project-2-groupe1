@@ -9,7 +9,6 @@ function ButtonFilter({ link, name }) {
   return (
     <button
       key={`${link}-${name}`}
-
       className="filterButton"
       type="button"
       onClick={() => handleClick()}

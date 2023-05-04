@@ -1,6 +1,5 @@
 import { useState } from "react";
-import Swal from 'sweetalert2'
-
+import Swal from "sweetalert2";
 
 function CartItem({ articles }) {
   const [totalValue, setTotalValue] = useState(
@@ -11,41 +10,45 @@ function CartItem({ articles }) {
   );
 
   const handleClick = () => {
-
     Swal.fire({
-      icon: 'error',
-      title: 'Hep là !',
-      text: 'Personne ne quitte Tom Nook sans payer !',
+      icon: "error",
+      title: "Hep là !",
+      text: "Personne ne quitte Tom Nook sans payer !",
       width: 600,
-      background: '#E7DCAF',
-    })
-  }
+      background: "#ece7cc",
+    });
+  };
 
   const validateClick = () => {
     Swal.fire({
-      icon: 'success',
-      text: 'Tom Nook te remercie pour ton achat.',
+      icon: "success",
+      text: "Tom Nook te remercie pour ton achat.",
       width: 600,
-      background: '#FFFBE7',
-    })
-  }
+      background: "#ece7cc",
+    });
+  };
 
   return (
     <div className="containerCart">
-      <h2 className="total-title">Total du panier : {totalValue} Clochettes</h2>
-
       <div className="container-delete-refuse">
         <button type="button" className="delete-button" onClick={handleClick}>
           Vider le panier
         </button>
-        <button type="button" className="validate-button" onClick={validateClick}>
+        <button
+          type="button"
+          className="validate-button"
+          onClick={validateClick}
+        >
           Valider le panier
         </button>
       </div>
 
+      <h2 className="total-title">Total du panier : {totalValue} Clochettes</h2>
+
       {articles?.map((article) => {
-        const [totalPriceMultipleItems, setTotalPriceMultipleItems] =
-          useState(article.buy_price);
+        const [totalPriceMultipleItems, setTotalPriceMultipleItems] = useState(
+          article.buy_price
+        );
 
         const handleMultipleArticle = (price) => {
           setTotalValue(totalValue + price);
@@ -62,13 +65,10 @@ function CartItem({ articles }) {
 
             <div className="cartPrice">
               <p id="prixUnitaire">Prix unitaire :</p>
-
               {article.buy_price}
               ,00 Clochettes
               <br />
-
               <p id="prixTotal"> Prix total :</p>
-
               {totalPriceMultipleItems}
               ,00 Clochettes
             </div>

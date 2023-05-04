@@ -3,7 +3,6 @@ import Cart from "@components/SideBar/Cart";
 import { Route, Routes } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
-import SHome from "./HomeStyle";
 import HousewareList from "./HousewareList";
 import EducationList from "./EducationList";
 import DecorationList from "./DecorationList";
@@ -12,7 +11,6 @@ import RecreationList from "./RecreationList";
 import OutilsList from "./OutilsList";
 
 function Home() {
-  
   const [show, setShow] = useState(false);
   const [articles, setArticles] = useState([]);
   const handleAddArticle = (article) => {
@@ -20,7 +18,7 @@ function Home() {
   };
 
   return (
-    <SHome>
+    <div>
       <Routes>
         <Route
           path="/Catalogue"
@@ -75,7 +73,7 @@ function Home() {
               articlesInCart={articles}
             />
           }
-      />
+        />
       </Routes>
       <Navbar
         setShow={setShow}
@@ -85,7 +83,7 @@ function Home() {
       />
       <Cart />
       <Footer />
-    </SHome>
+    </div>
   );
 }
 

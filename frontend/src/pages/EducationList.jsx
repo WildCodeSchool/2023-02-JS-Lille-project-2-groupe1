@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import CardProduct from "@components/CartProduct/CartdProduct";
 import { getItems } from "../services/api-calls";
 
-
 function EducationList({ handleAddArticle, articlesInCart }) {
   const [education, setEducation] = useState([]);
   useEffect(() => {
@@ -22,7 +21,6 @@ function EducationList({ handleAddArticle, articlesInCart }) {
       {education.map((Education) => (
         <CardProduct
           articlesInCart={articlesInCart}
-
           key={Education.id}
           note={Education.note}
           Product={Education}

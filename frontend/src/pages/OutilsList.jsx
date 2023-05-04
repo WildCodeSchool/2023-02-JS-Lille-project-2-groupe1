@@ -2,9 +2,7 @@ import { useEffect, useState } from "react";
 import CardProduct from "@components/CartProduct/CartdProduct";
 import { getItems } from "../services/api-calls";
 
-
 function OutilsList({ handleAddArticle, articlesInCart }) {
-
   const [outils, setOutils] = useState([]);
   useEffect(() => {
     getItems().then((itemsData) => {
@@ -22,9 +20,7 @@ function OutilsList({ handleAddArticle, articlesInCart }) {
     <div className="cart-container">
       {outils.map((Outils) => (
         <CardProduct
-
           articlesInCart={articlesInCart}
-
           key={Outils.id}
           note={Outils.note}
           Product={Outils}

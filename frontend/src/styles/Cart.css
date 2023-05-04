@@ -22,8 +22,12 @@
   flex-direction: column;
   width: 25%;
   height: 100%;
-  background: rgb(255,251,231);
-background: linear-gradient(0deg, rgba(255,251,231,1) 32%, rgba(231,220,175,1) 75%);
+  background: rgb(255, 251, 231);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 251, 231, 1) 32%,
+    rgba(231, 220, 175, 1) 75%
+  );
   align-items: center;
 }
 
@@ -34,12 +38,10 @@ background: linear-gradient(0deg, rgba(255,251,231,1) 32%, rgba(231,220,175,1) 7
   margin-right: 0px;
   padding-top: 5px;
   padding-bottom: 30px;
-  vertical-align : middle;
-  text-align : center;
+  vertical-align: middle;
+  text-align: center;
   border-bottom: solid #f5a96e;
 }
-
-
 
 .delete-button {
   background-color: var(--button-background-filter);
@@ -48,6 +50,7 @@ background: linear-gradient(0deg, rgba(255,251,231,1) 32%, rgba(231,220,175,1) 7
   font-size: 1rem;
   box-shadow: 1px 1px 8px #000000b8;
   width: 150px;
+  cursor: pointer;
 }
 
 .validate-button {
@@ -57,11 +60,11 @@ background: linear-gradient(0deg, rgba(255,251,231,1) 32%, rgba(231,220,175,1) 7
   font-size: 1rem;
   box-shadow: 1px 1px 8px #000000b8;
   width: 150px;
+  cursor: pointer;
 }
 
-
-
 .container-delete-refuse {
+  margin-top: 25px;
   margin-bottom: 25px;
   display: flex;
   justify-content: space-around;
@@ -95,23 +98,30 @@ background: linear-gradient(0deg, rgba(255,251,231,1) 32%, rgba(231,220,175,1) 7
 }
 
 #prixUnitaire {
-  text-decoration: underline overline #FF3028;
+  text-decoration: underline overline #ff3028;
 }
 
 #prixTotal {
-  text-decoration: underline overline #FF3028;
+  text-decoration: underline overline #ff3028;
 }
 
 .cartQuantityAndButton {
   grid-area: 3 / 2 / 4 / 3;
   justify-self: center;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .addQuantityBtn {
-  background-color: var(--button-background-filter);
+  background-color: var(--button-background-article);
   border-radius: 15px;
   border: none;
   font-size: 1rem;
   box-shadow: 1px 1px 8px #000000b8;
   width: 150px;
+}
+
+.addQuantityBtn:hover {
+  cursor: pointer;
 }

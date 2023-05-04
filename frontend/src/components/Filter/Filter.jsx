@@ -18,11 +18,9 @@ function Filter() {
 
   return (
     <div className="filterContainer">
-
       <div className="btnFilter">
         {linkName.map((link) => (
           <ButtonFilter link={`/${link}`} name={link} key={`${link}}`} />
-
         ))}
       </div>
       <div className="SelectFilter">
@@ -30,7 +28,6 @@ function Filter() {
           className="select "
           onChange={(event) => handleChange(event.target.value)}
         >
-
           <option value="">Select category </option>
           <option value="Catalogue">All Categories </option>
           <option value="Recreation">Recreation</option>
