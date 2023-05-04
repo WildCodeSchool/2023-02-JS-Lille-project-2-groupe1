@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Cart from "@components/SideBar/Cart";
 import { Route, Routes } from "react-router-dom";
-
 import Modal from "@components/Modal/Modal";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
@@ -31,6 +30,8 @@ function Home() {
   return (
     <SHome>
       {openModal && <Modal setOpenModal={setOpenModal} />}
+      
+      
       <Routes>
         <Route
           path="/Catalogue"

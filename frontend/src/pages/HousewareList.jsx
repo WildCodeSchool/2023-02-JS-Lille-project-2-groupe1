@@ -18,6 +18,9 @@ function HousewareList({ handleAddArticle }) {
 
   return (
     <div className="cart-container">
+
+    
+      
       {housewares.map((houseware) => (
         <CardHouseware
           key={houseware.id}
@@ -26,7 +29,7 @@ function HousewareList({ handleAddArticle }) {
           handleAddArticle={handleAddArticle}
         />
       ))}
-    </div>
+      </div>
   );
 }
 
