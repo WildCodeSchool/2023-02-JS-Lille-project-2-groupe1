@@ -3,7 +3,6 @@
   width: 100%;
   justify-content: center;
   flex-wrap: nowrap;
-
 }
 
 .filterButton {
@@ -12,7 +11,7 @@
   border: var(--button-border);
   border-radius: var(--button-border-radius);
   font-weight: var(--button-font-weight);
-  background-color: var(--button-background-filter); 
+  background-color: var(--button-background-filter);
   font-family: var(--global-font);
   letter-spacing: var(--button-letter-spacing);
   color: var(--button-color);
@@ -21,7 +20,6 @@
   box-shadow: var(--button-box-shadow);
   cursor: pointer;
   /* background-image: url('../assets/CategoriesBtn.svg'); */
-  
 }
 
 @media screen and (max-width: 800px) {
@@ -32,24 +30,20 @@
     grid-column-gap: 10px;
     grid-row-gap: 13px;
     margin-bottom: 2%;
-    
   }
 
   .filterButton {
-  margin-right: 0;
-  padding: 0;
-  font-size: 1rem;
-  
-  } 
+    margin-right: 0;
+    padding: 0;
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
-  
   .filterButton {
     font-size: 0.7rem;
     padding: 2.5%;
-  
-  } 
+  }
 
   .btnFilter {
     display: grid;
@@ -58,9 +52,5 @@
     grid-column-gap: 10px;
     grid-row-gap: 13px;
     margin-bottom: 0.2%;
-    
-    
   }
-
 }
-

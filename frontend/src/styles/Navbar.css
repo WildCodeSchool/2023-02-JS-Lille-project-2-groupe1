@@ -22,13 +22,13 @@
   top: 0;
   margin-top: 0;
   max-width: 100%;
-
 }
 .illustrationNavbarMobile {
   display: none;
 }
 
 .cartBtn {
+  all: unset;
   margin-right: 30px;
   height: fit-content;
   position: absolute;
@@ -37,8 +37,10 @@
 }
 
 .cartIcon {
-  width: 25px;
-  height: auto;
+  height: 80px;
+  width: auto;
+  margin-top: 30px;
+  margin-right: 5px;
 }
 
 .notifBtn {
@@ -47,23 +49,16 @@
   border-radius: 50%;
 }
 
-
-@media screen and (max-width: 700px){
- 
+@media screen and (max-width: 700px) {
   .illustrationNavbar {
     max-width: none;
     width: 250%;
-    margin-top: -10%;    
-    
-  } 
+    margin-top: -10%;
+  }
 }
 
-@media screen and (max-width: 500px){
- 
+@media screen and (max-width: 500px) {
   .illustrationNavbar {
     max-width: none;
-    
-        
-    
-  } 
+  }
 }

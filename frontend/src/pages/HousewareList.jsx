@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import CardHouseware from "../components/CardHouseware/CardHouseware";
 import { getItems } from "../services/api-calls";
 
-function HousewareList({ handleAddArticle }) {
+function HousewareList({ handleAddArticle, articlesInCart }) {
   const [housewares, setHousewares] = useState([]);
 
   useEffect(() => {
@@ -18,18 +18,16 @@ function HousewareList({ handleAddArticle }) {
 
   return (
     <div className="cart-container">
-
-    
-      
       {housewares.map((houseware) => (
         <CardHouseware
+          articlesInCart={articlesInCart}
           key={houseware.id}
           note={houseware.note}
           houseware={houseware}
           handleAddArticle={handleAddArticle}
         />
       ))}
-      </div>
+    </div>
   );
 }
 

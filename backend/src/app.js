@@ -14,16 +14,17 @@ const app = express();
 app.use(express.json());
 
 const cors = require("cors");
+
 const whitelist = process.env.FRONTEND_URL.split(",") || [
   "hhtp://localhost:5000",
-]
+];
 app.use(
   cors({
     origin(origin, callback) {
-      if(whitelist.indexOf(origin) !== -1) {
+      if (whitelist.indexOf(origin) !== -1) {
         callback(null, true);
-      }else{
-        callback(new Error("Not Allowed by cors"))
+      } else {
+        callback(new Error("Not Allowed by cors"));
       }
     },
     optionsSuccessStatus: 200,

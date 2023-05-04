@@ -20,12 +20,6 @@ function Cart({ children, shown, close, articles, setArticles }) {
         }}
         onKeyDown={(e) => e.stopPropagation()}
       >
-        <h1>Je suis un objet dans le panier</h1>
-
-        <button className="cartCloseBtn" type="button" onClick={() => close()}>
-          Fermer le panier
-        </button>
-
         <CartItem articles={articles} setArticles={setArticles} />
       </div>
 
