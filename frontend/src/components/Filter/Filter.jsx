@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import ButtonFilter from "./ButtonFilter";
+import Music from "@components/Music/Music";
 
 function Filter() {
   const linkName = [
@@ -18,6 +19,7 @@ function Filter() {
 
   return (
     <div className="filterContainer">
+      <Music />
       <div className="btnFilter">
         {linkName.map((link) => (
           <ButtonFilter link={`/${link}`} name={link} />
