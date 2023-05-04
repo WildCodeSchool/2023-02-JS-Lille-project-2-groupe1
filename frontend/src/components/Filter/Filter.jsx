@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import ButtonFilter from "./ButtonFilter";
 import Music from "@components/Music/Music";
+import ButtonFilter from "./ButtonFilter";
 
 function Filter() {
   const linkName = [

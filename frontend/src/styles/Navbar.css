@@ -32,12 +32,13 @@
   position: absolute;
   margin-top: 1%;
   margin-right: -2%;
+  cursor: pointer;
 }
-
 
 .cartIcon {
   width: 50%;
   right: -30;
+  cursor: pointer;
 }
 
 .notifBtn {
@@ -60,57 +61,43 @@
   }
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1000px) {
   .cartBtn {
     all: unset;
     position: absolute;
     margin-top: 1%;
     margin-right: -6%;
-    
   }
-  
+
   .cartIcon {
     right: -70;
     width: 40%;
   }
-
-
 }
 
-@media screen and (max-width: 750px){
- 
+@media screen and (max-width: 750px) {
   .cartBtn {
     all: unset;
     position: absolute;
     margin-top: 1%;
     margin-right: -10%;
-    
   }
 
   .cartIcon {
     right: -30;
     width: 30%;
   }
-
-
 }
 
-
-@media screen and (max-width: 425px){
- 
+@media screen and (max-width: 425px) {
   .cartBtn {
     all: unset;
     position: absolute;
     margin-top: 1%;
     margin-right: -20%;
-    
   }
 
   .cartIcon {
-    
     width: 25%;
   }
-
-
 }
-

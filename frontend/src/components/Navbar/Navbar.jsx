@@ -3,7 +3,6 @@ import Cart from "@components/SideBar/Cart";
 import SNavbar from "./NavbarStyle";
 import BulleCart from "../../assets/BulleCart.svg";
 import navbarImg from "../../assets/newnavbar.svg";
-import Music from "@components/Music/Music";
 
 export default function Navbar({ articles, setArticles }) {
   const [shown, setShown] = useState(false);

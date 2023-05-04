@@ -25,8 +25,6 @@
 .musicContainer {
   display: flex;
   flex-direction: column;
-  
-  
 }
 
 .musicButton {
@@ -43,9 +41,7 @@
   text-align: var(--button-text-align);
   box-shadow: var(--button-box-shadow);
   cursor: pointer;
-  
 }
-
 
 @media screen and (max-width: 800px) {
   .btnFilter {
@@ -64,8 +60,6 @@
   }
 }
 
-
-
 @media screen and (max-width: 500px) {
   .filterButton {
     font-size: 0.7rem;
@@ -81,9 +75,8 @@
     margin-bottom: 0.2%;
   }
 
-
   .musicContainer {
-    margin-right: -8% ;
+    margin-right: -8%;
     margin-top: 0.3%;
     display: grid;
     grid-template-columns: 1fr;
@@ -94,9 +87,6 @@
   }
 
   .musicButton {
-    
     font-size: 0.7rem;
-    
-    
   }
 }

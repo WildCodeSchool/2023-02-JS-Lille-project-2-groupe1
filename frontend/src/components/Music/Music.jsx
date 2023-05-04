@@ -1,19 +1,20 @@
-import music from "../../assets/Welcome.mp3"
+import music from "../../assets/Welcome.mp3";
 
 function Music() {
-  let audio = new Audio(music);
+  const audio = new Audio(music);
   const handlePlay = () => {
     audio.play();
   };
   const handlePause = () => {
     audio.pause();
   };
+
   return (
     <div className="musicContainer">
-      <button className="musicButton" onClick={handlePlay}>
+      <button className="musicButton" type="button" onClick={handlePlay}>
         Play
       </button>
-      <button className="musicButton" onClick={handlePause}>
+      <button className="musicButton" type="button" onClick={handlePause}>
         Pause
       </button>
     </div>
