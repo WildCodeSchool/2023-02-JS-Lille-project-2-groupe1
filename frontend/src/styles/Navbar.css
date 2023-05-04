@@ -9,11 +9,14 @@
   width: 100%;
   flex-direction: row;
   justify-content: right;
-  background-image: url("../assets/Navbarimg7777.svg");
+  background-image: url(../assets/newnavbar.svg);
+}
 
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: #f6eee1;
+.illustrationNavbar {
+  position: fixed;
+  top: 0;
+  margin-top: 0;
+  max-width: 100%;
 }
 
 .cartBtn {

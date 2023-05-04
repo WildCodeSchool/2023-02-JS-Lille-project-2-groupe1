@@ -2,6 +2,6 @@ import styled from "styled-components";
 
 export default styled.nav`
   img {
-    width: 100%;
+    /* width: 100%; */
   }
 `;

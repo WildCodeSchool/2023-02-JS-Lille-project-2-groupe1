@@ -2,6 +2,7 @@ import { useState } from "react";
 import Cart from "@components/SideBar/Cart";
 import SNavbar from "./NavbarStyle";
 import BulleCart from "../../assets/BulleCart.svg";
+// import navbarimage from "../../assets/newnavbar.svg";
 
 export default function Navbar({ articles, setArticles }) {
   const [shown, setShown] = useState(false);
@@ -9,6 +10,7 @@ export default function Navbar({ articles, setArticles }) {
   return (
     <SNavbar>
       <div className="header">
+      {/* <img src={navbarimage} className="illustrationNavbar" /> */}
         <button
           type="button"
           className="cartBtn"
@@ -18,6 +20,7 @@ export default function Navbar({ articles, setArticles }) {
         >
           <img src={BulleCart} className="cartIcon" alt="Icône de bouton" />
         </button>
+        
 
         <Cart
           articles={articles}

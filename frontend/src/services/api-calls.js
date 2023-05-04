@@ -1,5 +1,5 @@
 function getItems() {
-  return fetch("http://localhost:5002/items").then((res) => res.json());
+  return fetch("http://localhost:5000/items").then((res) => res.json());
 }
 
 export { getItems };
