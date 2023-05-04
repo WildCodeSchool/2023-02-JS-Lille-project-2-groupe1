@@ -17,7 +17,8 @@ function CardHouseware({ note, houseware, handleAddArticle, articlesInCart }) {
       <button
         type="button"
         onClick={() => handleAddArticle(houseware)}
-        className={alreadyInCart ? "inCartBtn" : "notInCartBtn"}      >
+        className={alreadyInCart ? "inCartBtn" : "notInCartBtn"}
+      >
         Ajouter
       </button>
     </div>
