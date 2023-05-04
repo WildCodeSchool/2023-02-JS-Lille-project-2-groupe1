@@ -1,7 +1,6 @@
 import { useState } from "react";
 
-function CartItem({ articles, setArticles }) {
-  const [totalPriceMultipleItems, setTotalPriceMultipleItems] = useState(0);
+function CartItem({ articles }) {
   const [totalValue, setTotalValue] = useState(
     articles.reduce(
       (accumulator, currentItem) => accumulator + currentItem.buy_price,
@@ -9,27 +8,28 @@ function CartItem({ articles, setArticles }) {
     )
   );
 
-  const handleDelete = (articleToDelete) => {
-    const articleCopy = articles.filter(
-      (article) => article.id !== articleToDelete.id
-    );
-
-    setArticles(articleCopy);
-    setTotalPriceMultipleItems(0);
-  };
-
-  const handleMultipleArticle = (price) => {
-    setTotalValue(totalValue + price);
-    setTotalPriceMultipleItems(totalPriceMultipleItems + price);
-  };
-
   return (
     <div className="containerCart">
-      <h2>Total du panier : {totalValue}</h2>
-      <button type="button" onClick={() => setArticles([])}>
-        Vider le panier
-      </button>
+      <h2 className="total-title">Total du panier : {totalValue}</h2>
+
+      <div className="container-delete-refuse">
+        <button type="button" className="delete-button">
+          Vider le panier
+        </button>
+
+        <div className="delete-refuse">
+          TOM NOOK IL A DIT FAIT PETER LES CLOCHETTES MAZAFAKA
+        </div>
+      </div>
+
       {articles?.map((article) => {
+        const [totalPriceMultipleItems, setTotalPriceMultipleItems] =
+          useState(0);
+        const handleMultipleArticle = (price) => {
+          setTotalValue(totalValue + price);
+          setTotalPriceMultipleItems(totalPriceMultipleItems + price);
+        };
+
         return (
           <div className="itemInCart" key={`art-in-cart-${article.id}`}>
             <div className="cartImage">
@@ -52,15 +52,6 @@ function CartItem({ articles, setArticles }) {
                 onClick={() => handleMultipleArticle(article.buy_price)}
               >
                 Ajouter
-              </button>
-
-              <button
-                type="button"
-                key={article.cle}
-                onClick={() => handleDelete(article)}
-                className="btnDeleteCart"
-              >
-                Supprimer
               </button>
             </div>
           </div>
