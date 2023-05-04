@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Cart from "@components/SideBar/Cart";
 import SNavbar from "./NavbarStyle";
+import BulleCart from "../../assets/BulleCart.svg";
 
 export default function Navbar({ articles, setArticles }) {
   const [shown, setShown] = useState(false);
@@ -15,7 +16,7 @@ export default function Navbar({ articles, setArticles }) {
             setShown(!shown);
           }}
         >
-          PANIER
+          <img src={BulleCart} className="cartIcon" alt="Icône de bouton" />
         </button>
 
         <Cart

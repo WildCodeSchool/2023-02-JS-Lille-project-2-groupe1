@@ -31,12 +31,8 @@ select {
   font-family: var(--button-font-family);
   font-weight: var(--button-font-weight);
   border-radius: var(--button-border-radius);
-  
-
 }
-
 
 .SelectFilter {
   display: none;
-
 }
