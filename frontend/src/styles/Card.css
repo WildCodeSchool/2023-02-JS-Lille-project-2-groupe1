@@ -15,9 +15,6 @@
   flex-wrap: wrap;
   padding: 5px;
   overflow-y: scroll;
-  height: 400px;
-  margin-right: 50px;
-  overflow-y: scroll;
   height: 100vh;
   margin-right: 50px;
 }

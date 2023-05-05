@@ -1,5 +1,5 @@
 import SFooter from "./FooterStyle";
-import footerImg from "../../assets/newfooter.svg";
+import footerImg from "../../assets/newfooterSOS.svg";
 import emptyFooter from "../../assets/footermob.svg";
 
 export default function Footer() {

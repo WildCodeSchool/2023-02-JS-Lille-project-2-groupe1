@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Cart from "@components/SideBar/Cart";
 import BulleCart from "../../assets/BulleCart.svg";
-import navbarImg from "../../assets/newnavbar.svg";
+import navbarImg from "../../assets/newnavbar_1.svg";
 
 export default function Navbar({ articles, setArticles }) {
   const [shown, setShown] = useState(false);
