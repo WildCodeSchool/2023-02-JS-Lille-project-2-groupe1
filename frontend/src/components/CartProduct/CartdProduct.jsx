@@ -9,7 +9,7 @@ function CardProduct({ note, Product, handleAddArticle, articlesInCart }) {
   return (
     <div className="carte">
       <h5>{Product.name}</h5>
-      <h5>price : {Product.buy_price}</h5>
+      <h5>price : {Product.buy_price} 🔔</h5>
 
       <img src={Product.image} alt={Product.name} />
 

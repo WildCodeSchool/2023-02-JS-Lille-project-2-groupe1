@@ -10,7 +10,7 @@ function CartItem({ articles }) {
 
   return (
     <div className="containerCart">
-      <h2 className="total-title">Total du panier : {totalValue}</h2>
+      <h2 className="total-title">Total du panier : {totalValue} 🔔</h2>
 
       <div className="container-delete-refuse">
         <button type="button" className="delete-button">
@@ -40,10 +40,10 @@ function CartItem({ articles }) {
 
             <div className="cartPrice">
               {article.buy_price}
-              ,00 Clochettes
+              ,00 🔔
               <br />
               {totalPriceMultipleItems}
-              ,00 Clochettes
+              ,00 🔔
             </div>
 
             <div className="cartQuantityAndButton">

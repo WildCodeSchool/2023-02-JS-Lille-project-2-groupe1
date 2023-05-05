@@ -6,17 +6,21 @@
 @import "./ButtonFilter.css";
 @import "./footer.css";
 
+
 @font-face {
-  font-family: "FinkHeavy";
-  src: local("Fink Heavy"), url("finkHeavy.ttf");
+  font-family: "Light"; /*Can be any text*/
+  src: local("FinkHeavy"), url("../font/FinkHeavy.ttf") format("truetype");
 }
+
+
+
 
 * {
   --background: #f6eee1;
   --brown-nook-color: #7e5939;
   --jackpot-primary: #bfa655;
   --jackpot-secondary: #f5a96e;
-  --global-font: "Roboto", sans-serif;
+  --global-font: "Light";
   --title-size: 1.7rem;
   --text-size: 1rem;
   --button-background-article: #87d4fb;
@@ -35,7 +39,15 @@
 }
 
 html {
-  background-color: var(--background);
+  
   width: 100vw;
   height: 100vh;
+}
+
+body {
+
+  font-family: "Light";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #F6EEE1;
 }

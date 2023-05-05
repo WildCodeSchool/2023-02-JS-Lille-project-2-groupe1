@@ -11,7 +11,7 @@ function CardHouseware({ note, houseware, handleAddArticle, articlesInCart }) {
   return (
     <div className="carte">
       <h5>{houseware.name}</h5>
-      <h5>price : {houseware.buy_price}</h5>
+      <h5>price : {houseware.buy_price} 🔔</h5>
       <img src={houseware.image} alt={houseware.name} />
       <Stars note={note} />
       <button

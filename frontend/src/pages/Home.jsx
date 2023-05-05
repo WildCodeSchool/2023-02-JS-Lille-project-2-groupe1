@@ -31,7 +31,7 @@ function Home() {
           }
         />
         <Route
-          path="/Décorations"
+          path="/Decorations"
           element={
             <DecorationList
               handleAddArticle={handleAddArticle}
@@ -40,7 +40,7 @@ function Home() {
           }
         />
         <Route
-          path="/Éducation"
+          path="/Education"
           element={
             <EducationList
               handleAddArticle={handleAddArticle}
@@ -58,7 +58,7 @@ function Home() {
           }
         />
         <Route
-          path="/Récréation"
+          path="/Recreation"
           element={
             <RecreationList
               handleAddArticle={handleAddArticle}

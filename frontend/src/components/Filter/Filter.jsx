@@ -5,11 +5,11 @@ import ButtonFilter from "./ButtonFilter";
 function Filter() {
   const linkName = [
     "Catalogue",
-    "Décorations",
+    "Decorations",
     "Outils",
-    "Récréation",
+    "Recreation",
     "Fournitures",
-    "Éducation",
+    "Education",
   ];
   const navigate = useNavigate();
 
@@ -33,7 +33,7 @@ function Filter() {
           <option value="">Select category </option>
           <option value="Catalogue">All Categories </option>
           <option value="Recreation">Recreation</option>
-          <option value="Education">Éducation</option>
+          <option value="Education">Education</option>
           <option value="Décoration">Decoration</option>
           <option value="Fourniture">Fourniture </option>
           <option value="Outil">Outil </option>
