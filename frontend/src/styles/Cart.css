@@ -22,9 +22,12 @@
   flex-direction: column;
   width: 25%;
   height: 100%;
-
-  background-image: url("../assets/Recipe_Info_Background.svg");
-
+  background: rgb(255, 251, 231);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 251, 231, 1) 32%,
+    rgba(231, 220, 175, 1) 75%
+  );
   align-items: center;
 }
 
@@ -34,38 +37,48 @@
   margin-left: 15px;
   margin-right: 0px;
   padding-top: 5px;
-}
-
-.delete-refuse {
-  /* display: none; */
-  background-color: rgb(206, 65, 65);
-  margin-bottom: 10px;
+  padding-bottom: 30px;
+  vertical-align: middle;
+  text-align: center;
+  border-bottom: solid #f5a96e;
 }
 
 .delete-button {
-  margin-left: 20px;
   background-color: var(--button-background-filter);
   border-radius: 15px;
   border: none;
   font-size: 1rem;
   box-shadow: 1px 1px 8px #000000b8;
   width: 150px;
+  cursor: pointer;
 }
 
-.delete-button:hover + .delete-refuse {
-  display: block;
+.validate-button {
+  background-color: var(--button-background-filter);
+  border-radius: 15px;
+  border: none;
+  font-size: 1rem;
+  box-shadow: 1px 1px 8px #000000b8;
+  width: 150px;
+  cursor: pointer;
 }
 
-.containerCart {
-  width: 100%;
+.container-delete-refuse {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .itemInCart {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
   align-items: center;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  border-bottom: thick double #f5a96ea2;
 }
 
 .cartImage {
@@ -84,9 +97,33 @@
   justify-self: center;
 }
 
+#prixUnitaire {
+  text-decoration: underline overline #ff3028;
+}
+
+#prixTotal {
+  text-decoration: underline overline #ff3028;
+}
+
 .cartQuantityAndButton {
   grid-area: 3 / 2 / 4 / 3;
   justify-self: center;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.addQuantityBtn {
+  background-color: var(--button-background-article);
+  border-radius: 15px;
+  border: none;
+  font-size: 1rem;
+  box-shadow: 1px 1px 8px #000000b8;
+  width: 150px;
+}
+
+.addQuantityBtn:hover {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1100px) {

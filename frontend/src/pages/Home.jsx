@@ -3,7 +3,6 @@ import Cart from "@components/SideBar/Cart";
 import { Route, Routes } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
-import SHome from "./HomeStyle";
 import HousewareList from "./HousewareList";
 import EducationList from "./EducationList";
 import DecorationList from "./DecorationList";
@@ -19,7 +18,7 @@ function Home() {
   };
 
   return (
-    <SHome>
+    <div>
       <Routes>
         <Route
           path="/Catalogue"
@@ -84,7 +83,7 @@ function Home() {
       />
       <Cart />
       <Footer />
-    </SHome>
+    </div>
   );
 }
 

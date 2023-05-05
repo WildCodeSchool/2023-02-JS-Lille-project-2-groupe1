@@ -22,7 +22,7 @@ function Filter() {
       <Music />
       <div className="btnFilter">
         {linkName.map((link) => (
-          <ButtonFilter link={`/${link}`} name={link} />
+          <ButtonFilter link={`/${link}`} name={link} key={`${link}}`} />
         ))}
       </div>
       <div className="SelectFilter">
