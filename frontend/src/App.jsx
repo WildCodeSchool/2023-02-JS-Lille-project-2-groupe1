@@ -4,7 +4,6 @@ import Filter from "./components/Filter/Filter";
 import "./styles/App.css";
 import "./font/FinkHeavy.ttf";
 
-
 function App() {
   return (
     <>

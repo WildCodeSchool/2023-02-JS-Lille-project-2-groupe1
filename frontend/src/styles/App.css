@@ -6,14 +6,10 @@
 @import "./ButtonFilter.css";
 @import "./footer.css";
 
-
 @font-face {
   font-family: "Light"; /*Can be any text*/
   src: local("FinkHeavy"), url("../font/FinkHeavy.ttf") format("truetype");
 }
-
-
-
 
 * {
   --background: #f6eee1;
@@ -39,15 +35,13 @@
 }
 
 html {
-  
   width: 100vw;
   height: 100vh;
 }
 
 body {
-
   font-family: "Light";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #F6EEE1;
+  background: #f6eee1;
 }
