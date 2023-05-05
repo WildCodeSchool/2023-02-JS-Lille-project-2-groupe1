@@ -27,6 +27,7 @@ app.use(
         callback(new Error("Not Allowed by cors"));
       }
     },
+
     optionsSuccessStatus: 200,
   })
 );
