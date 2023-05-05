@@ -16,9 +16,8 @@ app.use(express.json());
 const cors = require("cors");
 
 const whitelist = process.env.FRONTEND_URL.split(",") || [
-  "http://localhost:5000",
+  "hhtp://localhost:5000",
 ];
-
 app.use(
   cors({
     origin(origin, callback) {
@@ -28,6 +27,7 @@ app.use(
         callback(new Error("Not Allowed by cors"));
       }
     },
+
     optionsSuccessStatus: 200,
   })
 );

@@ -1,3 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .footer {
-  height: 200px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.responsiveBgFooter {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .footer {
+    display: none;
+  }
+
+  @media screen and (max-width: 700px) {
+    .responsiveBgFooter {
+      display: block;
+      width: 100%;
+    }
+  }
 }

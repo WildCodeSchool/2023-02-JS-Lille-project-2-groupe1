@@ -1,3 +1,4 @@
+import React from "react";
 import Home from "./pages/Home";
 import Filter from "./components/Filter/Filter";
 import "./styles/App.css";
